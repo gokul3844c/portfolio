@@ -1,0 +1,780 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gokul S | Full Stack Developer</title>
+  <meta name="description" content="Personal portfolio of Gokul S, a Full Stack Developer specializing in Web Development, Python, C, SQL, JavaScript, REST APIs, and AI applications.">
+  <meta name="keywords" content="Gokul S, Full Stack Developer, Rathinam College, Web Developer, Python, SQL, C, HTML, CSS, JavaScript, Portfolio, FixAI, Farmer AI, Genku">
+  <meta name="author" content="Gokul S">
+
+  <!-- Open Graph / Social Meta -->
+  <meta property="og:title" content="Gokul S | Full Stack Developer">
+  <meta property="og:description" content="Aspiring Full Stack Developer passionate about building modern, responsive, and user-friendly web applications.">
+  <meta property="og:type" content="website">
+
+  <!-- Google Fonts: Outfit & Inter & Fira Code -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600&family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Preloader Screen -->
+  <div id="page-loader" class="page-loader">
+    <div class="loader-content">
+      <div class="loader-brand"><span class="brand-code">&lt;/&gt;</span> <span class="brand-text">Gokul S</span></div>
+      <div class="loader-bar-container">
+        <div class="loader-bar-fill"></div>
+      </div>
+      <span class="loader-status">Initializing Workspace...</span>
+    </div>
+  </div>
+
+  <!-- Soft Cursor Glow (Desktop Only) -->
+  <div id="cursor-glow" class="cursor-glow"></div>
+
+  <!-- Scroll Progress Indicator -->
+  <div id="scroll-progress" class="scroll-progress"></div>
+
+  <!-- Toast Notification Container -->
+  <div id="toast-container" class="toast-container" aria-live="polite"></div>
+
+  <!-- Header / Navigation Bar -->
+  <header class="navbar-header" id="navbar">
+    <div class="nav-container">
+      <a href="#hero" class="nav-brand" aria-label="Gokul S Home">
+        <span class="brand-code">&lt;/&gt;</span><span class="brand-name">Gokul S</span>
+      </a>
+
+      <!-- Desktop Navigation Links -->
+      <nav class="nav-menu" id="nav-menu">
+        <ul class="nav-list">
+          <li class="nav-item"><a href="#hero" class="nav-link active">Home</a></li>
+          <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+          <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
+          <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
+          <li class="nav-item"><a href="#education" class="nav-link">Education</a></li>
+          <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <!-- Dark / Light Mode Toggle -->
+        <button id="theme-toggle" class="theme-toggle-btn" aria-label="Toggle dark and light theme" title="Toggle Theme">
+          <i class="fa-solid fa-moon moon-icon"></i>
+          <i class="fa-solid fa-sun sun-icon"></i>
+        </button>
+
+        <!-- Download Resume Button -->
+        <a href="assets/Gokul_S_Resume.pdf" target="_blank" class="btn btn-outline btn-sm nav-resume-btn magnetic-btn" download="Gokul_S_Resume">
+          <i class="fa-solid fa-download"></i> <span>Download Resume</span>
+        </a>
+
+        <!-- Mobile Hamburger Menu Button -->
+        <button class="hamburger" id="hamburger-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO SECTION -->
+    <section id="hero" class="hero-section">
+      <!-- Background Interactive Canvas -->
+      <canvas id="particle-canvas" class="particle-canvas"></canvas>
+
+      <div class="hero-radial-bg"></div>
+
+      <div class="container hero-container">
+        <!-- Hero Left Side -->
+        <div class="hero-content reveal">
+          <div class="hero-badge">
+            <span class="pulse-dot"></span>
+            <span>● FULL STACK DEVELOPER</span>
+          </div>
+
+          <h1 class="hero-title">
+            Hi, I'm <span class="text-gradient-shine">Gokul S</span>
+          </h1>
+
+          <h2 class="hero-subtitle">
+            Full Stack Developer
+          </h2>
+
+          <p class="hero-description">
+            I am Gokul S, an aspiring Full Stack Developer passionate about building modern, responsive and user-friendly web applications. I enjoy solving real-world problems using programming, web technologies, databases and Python.
+          </p>
+
+          <div class="hero-actions">
+            <a href="#projects" class="btn btn-primary magnetic-btn">
+              <span>View My Projects</span>
+              <i class="fa-solid fa-arrow-right btn-arrow"></i>
+            </a>
+            <a href="#contact" class="btn btn-secondary magnetic-btn">
+              <span>Contact Me</span>
+              <i class="fa-regular fa-paper-plane"></i>
+            </a>
+          </div>
+
+          <!-- Social Links -->
+          <div class="hero-social-strip">
+            <a href="https://github.com/gokul3844c" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="GitHub Profile" title="GitHub">
+              <i class="fa-brands fa-github"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/gokul3844/" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="LinkedIn Profile" title="LinkedIn">
+              <i class="fa-brands fa-linkedin-in"></i>
+            </a>
+            <a href="mailto:gokul3844c@gmail.com" class="social-icon-btn" aria-label="Email Direct" title="Email Gokul S">
+              <i class="fa-solid fa-envelope"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Hero Right Side: Developer Workspace Graphic + Floating Tech Icons -->
+        <div class="hero-visual reveal">
+          <div class="workspace-wrapper">
+
+            <!-- Floating Tech Badges around Laptop Visual -->
+            <div class="floating-tech-badge badge-python float-anim-1">
+              <i class="fa-brands fa-python"></i> Python
+            </div>
+            <div class="floating-tech-badge badge-c float-anim-2">
+              <i class="fa-solid fa-c"></i> C
+            </div>
+            <div class="floating-tech-badge badge-html float-anim-3">
+              <i class="fa-brands fa-html5"></i> HTML
+            </div>
+            <div class="floating-tech-badge badge-css float-anim-1">
+              <i class="fa-brands fa-css3-alt"></i> CSS
+            </div>
+            <div class="floating-tech-badge badge-sql float-anim-2">
+              <i class="fa-solid fa-database"></i> SQL
+            </div>
+            <div class="floating-tech-badge badge-js float-anim-3">
+              <i class="fa-brands fa-js"></i> JavaScript
+            </div>
+
+            <!-- IDE Code Window Graphic -->
+            <div class="ide-window bento-card tilt-card">
+              <div class="ide-header">
+                <div class="ide-controls">
+                  <span class="control close"></span>
+                  <span class="control minimize"></span>
+                  <span class="control maximize"></span>
+                </div>
+                <div class="ide-tabs">
+                  <button class="ide-tab active" data-tab="profile">
+                    <i class="fa-brands fa-python python-icon"></i> gokul_profile.py
+                  </button>
+                  <button class="ide-tab" data-tab="stack">
+                    <i class="fa-solid fa-code json-icon"></i> stack.json
+                  </button>
+                </div>
+              </div>
+
+              <div class="ide-body">
+                <pre class="code-block tab-content active" id="tab-profile"><code><span class="code-keyword">class</span> <span class="code-class">FullStackDeveloper</span>:
+    <span class="code-keyword">def</span> <span class="code-func">__init__</span>(self):
+        self.name = <span class="code-string">"Gokul S"</span>
+        self.role = <span class="code-string">"Full Stack Developer"</span>
+        self.college = <span class="code-string">"Rathinam College"</span>
+        self.skills = [<span class="code-string">"C"</span>, <span class="code-string">"Python"</span>, <span class="code-string">"HTML"</span>, <span class="code-string">"CSS"</span>, <span class="code-string">"SQL"</span>, <span class="code-string">"JS"</span>]
+
+    <span class="code-keyword">def</span> <span class="code-func">build_solution</span>(self):
+        <span class="code-keyword">return</span> <span class="code-string">"Creating responsive, high-impact web apps."</span>
+
+gokul = FullStackDeveloper()
+<span class="code-func">print</span>(gokul.build_solution())</code></pre>
+
+                <pre class="code-block tab-content" id="tab-stack"><code>{
+  <span class="code-string">"developer"</span>: <span class="code-string">"Gokul S"</span>,
+  <span class="code-string">"skills"</span>: [<span class="code-string">"C"</span>, <span class="code-string">"Python"</span>, <span class="code-string">"HTML"</span>, <span class="code-string">"CSS"</span>, <span class="code-string">"SQL"</span>, <span class="code-string">"JS"</span>],
+  <span class="code-string">"github"</span>: <span class="code-string">"github.com/gokul3844c"</span>,
+  <span class="code-string">"linkedin"</span>: <span class="code-string">"linkedin.com/in/gokul3844"</span>,
+  <span class="code-string">"status"</span>: <span class="code-string">"Open to Placements & Projects"</span>
+}</code></pre>
+              </div>
+
+              <div class="ide-footer">
+                <span class="status-item"><i class="fa-solid fa-circle-check"></i> Python 3.11</span>
+                <span class="status-item"><i class="fa-solid fa-code-branch"></i> main</span>
+                <span class="status-item">UTF-8</span>
+              </div>
+            </div>
+
+            <!-- Workspace Illustration Backdrop -->
+            <div class="workspace-art-frame">
+              <img src="assets/images/hero_developer_visual.png" alt="Developer Workspace Visual" class="workspace-art-img">
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT ME (BENTO GRID LAYOUT) -->
+    <section id="about" class="section about-section">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag">BACKGROUND</span>
+          <h2 class="section-title">About <span class="text-gradient">Me</span></h2>
+          <div class="title-underline"></div>
+        </div>
+
+        <div class="bento-grid about-bento">
+          <!-- Main Bento Bio Card -->
+          <div class="bento-card bento-hero-bio reveal tilt-card">
+            <div class="bento-icon-header">
+              <div class="bento-icon-wrapper">
+                <i class="fa-solid fa-user-astronaut"></i>
+              </div>
+              <span class="bento-badge">Full Stack Focus</span>
+            </div>
+            <h3>Passionate Engineering & Web Development</h3>
+            <p class="bio-text">
+              I am Gokul S, a passionate developer interested in Full Stack Web Development and software engineering. I have a strong interest in programming, frontend development, backend development and database technologies. I enjoy learning new technologies and turning ideas into practical applications.
+            </p>
+            <div class="bio-skills-strip">
+              <span class="bio-tag"><i class="fa-solid fa-code"></i> Clean Code</span>
+              <span class="bio-tag"><i class="fa-solid fa-database"></i> Database Design</span>
+              <span class="bio-tag"><i class="fa-solid fa-layer-group"></i> REST Architecture</span>
+            </div>
+          </div>
+
+          <!-- 3 Sub Bento Cards -->
+          <div class="bento-subgrid">
+            <!-- Sub Card 1: Problem Solver -->
+            <div class="bento-card bento-feature-card reveal tilt-card">
+              <div class="card-icon-box icon-cyan">
+                <i class="fa-solid fa-lightbulb"></i>
+              </div>
+              <h4>Problem Solver</h4>
+              <p>I enjoy understanding real-world problems and developing practical technology solutions.</p>
+            </div>
+
+            <!-- Sub Card 2: Web Developer -->
+            <div class="bento-card bento-feature-card reveal tilt-card">
+              <div class="card-icon-box icon-indigo">
+                <i class="fa-solid fa-laptop-code"></i>
+              </div>
+              <h4>Web Developer</h4>
+              <p>Interested in creating responsive and user-friendly web applications.</p>
+            </div>
+
+            <!-- Sub Card 3: Continuous Learner -->
+            <div class="bento-card bento-feature-card reveal tilt-card">
+              <div class="card-icon-box icon-purple">
+                <i class="fa-solid fa-rocket"></i>
+              </div>
+              <h4>Continuous Learner</h4>
+              <p>Always exploring new technologies and improving my development skills.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS DASHBOARD (BENTO GRID) -->
+    <section id="skills" class="section skills-section">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag">TECHNICAL DASHBOARD</span>
+          <h2 class="section-title">Technical <span class="text-gradient">Skills</span></h2>
+          <p class="section-description">A structured overview of programming languages, web tools, and database frameworks I work with.</p>
+          <div class="title-underline"></div>
+        </div>
+
+        <div class="bento-grid skills-bento">
+          <!-- Programming Category -->
+          <div class="bento-card skill-bento-card reveal tilt-card">
+            <div class="bento-card-title">
+              <i class="fa-solid fa-terminal card-title-icon"></i>
+              <h3>Programming</h3>
+            </div>
+            <div class="skills-list">
+              <div class="skill-tile">
+                <div class="tile-main">
+                  <i class="fa-solid fa-c tile-icon"></i>
+                  <span class="tile-name">C</span>
+                </div>
+                <span class="stage-badge stage-practicing"><i class="fa-solid fa-play"></i> Practicing</span>
+              </div>
+              <div class="skill-tile">
+                <div class="tile-main">
+                  <i class="fa-brands fa-python tile-icon"></i>
+                  <span class="tile-name">Python</span>
+                </div>
+                <span class="stage-badge stage-building"><i class="fa-solid fa-circle-check"></i> Building</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Frontend Category -->
+          <div class="bento-card skill-bento-card reveal tilt-card">
+            <div class="bento-card-title">
+              <i class="fa-solid fa-code card-title-icon"></i>
+              <h3>Frontend</h3>
+            </div>
+            <div class="skills-list">
+              <div class="skill-tile">
+                <div class="tile-main">
+                  <i class="fa-brands fa-html5 tile-icon"></i>
+                  <span class="tile-name">HTML</span>
+                </div>
+                <span class="stage-badge stage-building"><i class="fa-solid fa-circle-check"></i> Building</span>
+              </div>
+              <div class="skill-tile">
+                <div class="tile-main">
+                  <i class="fa-brands fa-css3-alt tile-icon"></i>
+                  <span class="tile-name">CSS</span>
+                </div>
+                <span class="stage-badge stage-building"><i class="fa-solid fa-circle-check"></i> Building</span>
+              </div>
+              <div class="skill-tile">
+                <div class="tile-main">
+                  <i class="fa-brands fa-js tile-icon"></i>
+                  <span class="tile-name">JavaScript</span>
+                </div>
+                <span class="stage-badge stage-practicing"><i class="fa-solid fa-play"></i> Practicing</span>
+              </div>
+              <div class="skill-tile">
+                <div class="tile-main">
+                  <i class="fa-solid fa-mobile-screen tile-icon"></i>
+                  <span class="tile-name">Responsive Web Design</span>
+                </div>
+                <span class="stage-badge stage-building"><i class="fa-solid fa-circle-check"></i> Building</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Backend Category -->
+          <div class="bento-card skill-bento-card reveal tilt-card">
+            <div class="bento-card-title">
+              <i class="fa-solid fa-server card-title-icon"></i>
+              <h3>Backend</h3>
+            </div>
+            <div class="skills-list">
+              <div class="skill-tile">
+                <div class="tile-main">
+                  <i class="fa-brands fa-python tile-icon"></i>
+                  <span class="tile-name">Python</span>
+                </div>
+                <span class="stage-badge stage-building"><i class="fa-solid fa-circle-check"></i> Building</span>
+              </div>
+              <div class="skill-tile">
+                <div class="tile-main">
+                  <i class="fa-solid fa-network-wired tile-icon"></i>
+                  <span class="tile-name">REST APIs</span>
+                </div>
+                <span class="stage-badge stage-practicing"><i class="fa-solid fa-play"></i> Practicing</span>
+              </div>
+              <div class="skill-tile">
+                <div class="tile-main">
+                  <i class="fa-solid fa-gears tile-icon"></i>
+                  <span class="tile-name">Backend Development</span>
+                </div>
+                <span class="stage-badge stage-learning"><i class="fa-solid fa-book-open"></i> Learning</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Database Category -->
+          <div class="bento-card skill-bento-card reveal tilt-card">
+            <div class="bento-card-title">
+              <i class="fa-solid fa-database card-title-icon"></i>
+              <h3>Database</h3>
+            </div>
+            <div class="skills-list">
+              <div class="skill-tile">
+                <div class="tile-main">
+                  <i class="fa-solid fa-table tile-icon"></i>
+                  <span class="tile-name">SQL</span>
+                </div>
+                <span class="stage-badge stage-building"><i class="fa-solid fa-circle-check"></i> Building</span>
+              </div>
+              <div class="skill-tile">
+                <div class="tile-main">
+                  <i class="fa-solid fa-database tile-icon"></i>
+                  <span class="tile-name">Database Management</span>
+                </div>
+                <span class="stage-badge stage-practicing"><i class="fa-solid fa-play"></i> Practicing</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Full Stack Integration Category (Full Width) -->
+          <div class="bento-card skill-bento-card bento-span-full reveal tilt-card">
+            <div class="bento-card-title">
+              <i class="fa-solid fa-layer-group card-title-icon"></i>
+              <h3>Full Stack Integration</h3>
+            </div>
+            <div class="skills-horizontal-wrap">
+              <div class="skill-chip">
+                <i class="fa-solid fa-laptop-code"></i> <span>Frontend Development</span>
+              </div>
+              <div class="skill-chip">
+                <i class="fa-solid fa-server"></i> <span>Backend Development</span>
+              </div>
+              <div class="skill-chip">
+                <i class="fa-solid fa-plug"></i> <span>API Integration</span>
+              </div>
+              <div class="skill-chip">
+                <i class="fa-solid fa-diagram-project"></i> <span>Database Integration</span>
+              </div>
+              <div class="skill-chip">
+                <i class="fa-brands fa-git-alt"></i> <span>Git & GitHub</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECT SECTION (FEATURED SHOWCASE) -->
+    <section id="projects" class="section projects-section">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag">FEATURED WORK</span>
+          <h2 class="section-title">Featured <span class="text-gradient">Projects</span></h2>
+          <p class="section-description">Some of the projects I've worked on and built while learning and exploring technology.</p>
+          <div class="title-underline"></div>
+        </div>
+
+        <div class="projects-bento-grid">
+
+          <!-- PROJECT 01 — FixAI -->
+          <article class="bento-card project-bento-card reveal tilt-card">
+            <div class="project-media-frame">
+              <img src="assets/images/fixai_thumbnail.png" alt="FixAI Project Visual" class="project-media-img">
+              <span class="project-badge">PROJECT 01</span>
+              <div class="project-media-overlay">
+                <button class="btn btn-sm btn-primary view-project-btn" data-project="fixai">
+                  <i class="fa-solid fa-expand"></i> Quick View
+                </button>
+              </div>
+            </div>
+
+            <div class="project-details">
+              <span class="project-category">AI HARDWARE DAMAGE ASSISTANT</span>
+              <h3 class="project-name">FixAI</h3>
+              <p class="project-summary">
+                An AI-powered system designed to help users identify damaged electronic components, understand their purpose, identify possible causes of damage and receive repair guidance.
+              </p>
+
+              <div class="project-tech-pills">
+                <span class="tech-tag">Python</span>
+                <span class="tech-tag">HTML</span>
+                <span class="tech-tag">CSS</span>
+                <span class="tech-tag">SQL</span>
+                <span class="tech-tag tech-tag-ai">AI</span>
+              </div>
+
+              <div class="project-actions">
+                <a href="https://github.com/gokul3844c/Fixio" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm magnetic-btn">
+                  <i class="fa-brands fa-github"></i> <span>View on GitHub</span>
+                </a>
+                <a href="https://fixai-demo.example.com" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm magnetic-btn">
+                  <i class="fa-solid fa-up-right-from-square"></i> <span>Live Demo</span>
+                </a>
+                <button class="btn btn-primary btn-sm view-project-btn magnetic-btn" data-project="fixai">
+                  <span>View Project</span>
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- PROJECT 02 — Farmer AI -->
+          <article class="bento-card project-bento-card reveal tilt-card">
+            <div class="project-media-frame">
+              <img src="assets/images/farmerai_thumbnail.png" alt="Farmer AI Project Visual" class="project-media-img">
+              <span class="project-badge">PROJECT 02</span>
+              <div class="project-media-overlay">
+                <button class="btn btn-sm btn-primary view-project-btn" data-project="farmerai">
+                  <i class="fa-solid fa-expand"></i> Quick View
+                </button>
+              </div>
+            </div>
+
+            <div class="project-details">
+              <span class="project-category">SMART AGRICULTURAL ASSISTANT</span>
+              <h3 class="project-name">Farmer AI</h3>
+              <p class="project-summary">
+                A smart agriculture application providing useful features such as crop disease detection, crop price information, weather-related guidance, irrigation support and an AI assistant.
+              </p>
+
+              <div class="project-tech-pills">
+                <span class="tech-tag">Python</span>
+                <span class="tech-tag">Flutter</span>
+                <span class="tech-tag">SQL</span>
+                <span class="tech-tag tech-tag-ai">AI</span>
+              </div>
+
+              <div class="project-actions">
+                <a href="https://github.com/gokul3844c/farmer-ai" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm magnetic-btn">
+                  <i class="fa-brands fa-github"></i> <span>View on GitHub</span>
+                </a>
+                <a href="https://farmerai-demo.example.com" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm magnetic-btn">
+                  <i class="fa-solid fa-up-right-from-square"></i> <span>Live Demo</span>
+                </a>
+                <button class="btn btn-primary btn-sm view-project-btn magnetic-btn" data-project="farmerai">
+                  <span>View Project</span>
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- PROJECT 03 — Genku -->
+          <article class="bento-card project-bento-card reveal tilt-card">
+            <div class="project-media-frame">
+              <img src="assets/images/genku_thumbnail.png" alt="Genku Project Visual" class="project-media-img">
+              <span class="project-badge">PROJECT 03</span>
+              <div class="project-media-overlay">
+                <button class="btn btn-sm btn-primary view-project-btn" data-project="genku">
+                  <i class="fa-solid fa-expand"></i> Quick View
+                </button>
+              </div>
+            </div>
+
+            <div class="project-details">
+              <span class="project-category">AI VOICE ASSISTANT</span>
+              <h3 class="project-name">Genku</h3>
+              <p class="project-summary">
+                An intelligent voice assistant designed to understand user commands and provide conversational responses using AI and voice technologies.
+              </p>
+
+              <div class="project-tech-pills">
+                <span class="tech-tag">Python</span>
+                <span class="tech-tag tech-tag-ai">AI</span>
+                <span class="tech-tag">Voice Processing</span>
+              </div>
+
+              <div class="project-actions">
+                <a href="https://github.com/gokul3844c/genku" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm magnetic-btn">
+                  <i class="fa-brands fa-github"></i> <span>View on GitHub</span>
+                </a>
+                <a href="https://genku-demo.example.com" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm magnetic-btn">
+                  <i class="fa-solid fa-up-right-from-square"></i> <span>Live Demo</span>
+                </a>
+                <button class="btn btn-primary btn-sm view-project-btn magnetic-btn" data-project="genku">
+                  <span>View Project</span>
+                </button>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- EDUCATION SECTION -->
+    <section id="education" class="section education-section">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag">ACADEMIC JOURNEY</span>
+          <h2 class="section-title">My <span class="text-gradient">Education</span></h2>
+          <div class="title-underline"></div>
+        </div>
+
+        <div class="bento-card education-timeline-bento reveal tilt-card">
+          <div class="timeline-track-line"></div>
+          <div class="timeline-node-item">
+            <div class="timeline-icon-node">
+              <i class="fa-solid fa-graduation-cap"></i>
+            </div>
+            <div class="timeline-body-content">
+              <div class="timeline-header-strip">
+                <span class="college-badge"><i class="fa-solid fa-building-columns"></i> College</span>
+                <span class="year-pill"><i class="fa-regular fa-calendar-days"></i> [Year / Expected Graduation]</span>
+              </div>
+              <h3 class="college-name">Rathinam College</h3>
+              <p class="degree-info">
+                <strong>Course / Degree Name:</strong> <span>[Degree / Course Name]</span>
+              </p>
+              <p class="education-summary">
+                Pursuing core computer science engineering concepts, programming fundamentals (C, Python), web application design, database modeling (SQL), and software development workflows.
+              </p>
+              <span class="edit-note-hint"><i class="fa-solid fa-circle-info"></i> Editable placeholder slots available in <code>index.html</code>.</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT SECTION (BENTO SPLIT) -->
+    <section id="contact" class="section contact-section">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag">GET IN TOUCH</span>
+          <h2 class="section-title">Contact <span class="text-gradient">Me</span></h2>
+          <p class="section-description">Available for Full Stack Development opportunities, placements, internships, and collaborative projects.</p>
+          <div class="title-underline"></div>
+        </div>
+
+        <div class="bento-grid contact-bento-grid">
+          <!-- Contact Left Bento Card -->
+          <div class="bento-card contact-info-bento reveal tilt-card">
+            <div class="cta-heading-box">
+              <h3>Let's build something useful together.</h3>
+              <p>Feel free to reach out directly via phone or email, or connect with me on GitHub & LinkedIn.</p>
+            </div>
+
+            <div class="contact-methods-list">
+              <!-- Name Item -->
+              <div class="contact-method-card">
+                <div class="method-icon icon-blue"><i class="fa-solid fa-user"></i></div>
+                <div class="method-info">
+                  <span class="method-label">Name</span>
+                  <span class="method-val">Gokul S</span>
+                </div>
+              </div>
+
+              <!-- Phone Item -->
+              <div class="contact-method-card">
+                <div class="method-icon icon-cyan"><i class="fa-solid fa-phone"></i></div>
+                <div class="method-info">
+                  <span class="method-label">Phone</span>
+                  <a href="tel:9677753288" class="method-val">9677753288</a>
+                </div>
+                <button class="copy-btn" data-copy="9677753288" title="Copy Phone Number">
+                  <i class="fa-regular fa-copy"></i>
+                </button>
+              </div>
+
+              <!-- Email Item -->
+              <div class="contact-method-card">
+                <div class="method-icon icon-purple"><i class="fa-solid fa-envelope"></i></div>
+                <div class="method-info">
+                  <span class="method-label">Email</span>
+                  <a href="mailto:gokul3844c@gmail.com" class="method-val">gokul3844c@gmail.com</a>
+                </div>
+                <button class="copy-btn" data-copy="gokul3844c@gmail.com" title="Copy Email Address">
+                  <i class="fa-regular fa-copy"></i>
+                </button>
+              </div>
+            </div>
+
+            <!-- Social Links Strip -->
+            <div class="contact-socials-box">
+              <h4>Social Profiles</h4>
+              <div class="social-pills-row">
+                <a href="https://github.com/gokul3844c" target="_blank" rel="noopener noreferrer" class="social-pill github">
+                  <i class="fa-brands fa-github"></i> GitHub
+                </a>
+                <a href="https://www.linkedin.com/in/gokul3844/" target="_blank" rel="noopener noreferrer" class="social-pill linkedin">
+                  <i class="fa-brands fa-linkedin-in"></i> LinkedIn
+                </a>
+                <a href="mailto:gokul3844c@gmail.com" class="social-pill email">
+                  <i class="fa-solid fa-envelope"></i> Email
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Contact Form Right Bento Card -->
+          <div class="bento-card contact-form-bento reveal tilt-card">
+            <h3 class="form-title">Send Message</h3>
+            <form id="contact-form" class="contact-form" action="#" method="POST" novalidate>
+              <div class="form-group">
+                <label for="name">Name</label>
+                <div class="input-field-wrap">
+                  <i class="fa-regular fa-user field-icon"></i>
+                  <input type="text" id="name" name="name" placeholder="Your Full Name" required>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="email">Email</label>
+                <div class="input-field-wrap">
+                  <i class="fa-regular fa-envelope field-icon"></i>
+                  <input type="email" id="email" name="email" placeholder="name@example.com" required>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="subject">Subject</label>
+                <div class="input-field-wrap">
+                  <i class="fa-regular fa-bookmark field-icon"></i>
+                  <input type="text" id="subject" name="subject" placeholder="Project Inquiry / Job Opportunity" required>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="message">Message</label>
+                <div class="input-field-wrap">
+                  <i class="fa-regular fa-comment-dots field-icon area-icon"></i>
+                  <textarea id="message" name="message" rows="4" placeholder="Hi Gokul, I'd like to discuss a project..." required></textarea>
+                </div>
+              </div>
+
+              <button type="submit" class="btn btn-primary btn-block magnetic-btn" id="form-submit-btn">
+                <span>Send Message</span>
+                <i class="fa-solid fa-paper-plane btn-arrow"></i>
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- MINIMAL FOOTER -->
+  <footer class="footer">
+    <div class="container footer-container">
+      <div class="footer-brand-strip">
+        <a href="#hero" class="footer-logo">
+          <span class="brand-code">&lt;/&gt;</span> <span class="brand-name">Gokul S</span>
+        </a>
+        <span class="footer-role">Full Stack Developer</span>
+        <blockquote class="footer-quote">"Building, learning and creating with technology."</blockquote>
+      </div>
+
+      <nav class="footer-nav-links">
+        <a href="#hero">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#education">Education</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <div class="footer-social-row">
+        <a href="https://github.com/gokul3844c" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/gokul3844/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+        <a href="mailto:gokul3844c@gmail.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+      </div>
+
+      <div class="footer-copyright-row">
+        <p>&copy; 2026 Gokul S. All Rights Reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to Top Button -->
+  <button id="back-to-top" class="back-to-top-btn" aria-label="Back to top" title="Back to Top">
+    <i class="fa-solid fa-arrow-up"></i>
+  </button>
+
+  <!-- Project Details Modal Dialog -->
+  <div id="project-modal" class="modal-backdrop" aria-hidden="true" role="dialog">
+    <div class="modal-content bento-card">
+      <button id="modal-close" class="modal-close-btn" aria-label="Close modal">&times;</button>
+      <div id="modal-body" class="modal-body">
+        <!-- Injected dynamically via JS -->
+      </div>
+    </div>
+  </div>
+
+  <!-- JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>
